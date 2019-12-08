@@ -1,0 +1,1 @@
+Use chain for composable error handling with nested Eithers
