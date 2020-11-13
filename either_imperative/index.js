@@ -15,6 +15,14 @@ const Left = x =>
 const fromNullable = x =>
     x != null ? Right(x) : Left(null)
 
+const tryCatch = f => {
+    try {
+        return Right(f())
+    } catch(e) {
+        return Left(e)
+    }
+}
+
 /*-----------------------------*/
 
 const openSiteImperative = () => {
